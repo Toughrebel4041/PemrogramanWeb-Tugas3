@@ -194,6 +194,5 @@ else {
 <?php
     }
 ?>
-    ?>
 </body>
 </html>
