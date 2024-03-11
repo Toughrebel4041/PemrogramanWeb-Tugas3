@@ -6,6 +6,7 @@
     <title>latihan2 - Raihan Sultan</title>
 </head>
 <body>
+    <div class="container" style="margin-left:auto; margin-right:auto; padding:20px; background-color:lightgrey;">
     <h1>Form Penyewaan</h1>
     <form action="Latihan2_penyewaanPOST.php" method="post">
     <h4>Judul Buku<h4>    
@@ -13,10 +14,10 @@
         <h4>Kategori Buku</h4>
         <select name="genre">
             <option value="">...</option>
-            <option value="Fict">Fiksi</option>
-            <option value="NonFict">Non-Fiksi</option>
+            <option value="Fiction">Fiksi</option>
+            <option value="Non-Fiction">Non-Fiksi</option>
             <option value="Article">Karya Ilmiah</option>
-            <option value="Mag">Majalah</option>
+            <option value="Magazine">Majalah</option>
         </select><br>
         <h4>Tanggal Pinjam</h4>
         <select name="date">
@@ -57,21 +58,25 @@
             </select>
         <br>
         <h4>Lama Pinjam</h4>
-        <input type="number" name="duration"><br>
+        <input type="number" name="duration"> Hari<br>
         <h4>Nama Anggota</h4>
         <input type="text" name="name"><br>
         <h4>Nama Petugas</h4>
         <select name="staff">
             <?php
                 $officer=array("Wawan Sumatera", "Agus LPG 12 Kilo", "Iskandar Basreng pedas");
-                foreach($officer as $x) {
-                    echo "<option value='$x'>$x</option>";
+                foreach($officer as $Off) {
+                    echo "<option value='$Off'>$Off</option>";
                 }
             ?>
         </select>
         <br>
-        <input name="submit" type="submit" value="simpan">
-        <input name="reset" type="reset" value="batal">
+        <br>
+        <div class="container" style="">
+        <input name="submit" type="submit" value="Simpan">
+        <input name="reset" type="reset" value="Batal">
+            </div>
     </form>
+            </div>
 </body>
 </html>

@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $phone=$_POST['phone'];
     $gender=$_POST['gender'];
 ?>
-
+    <h5>Redirecting to Exploit Repository Page in 3 ...<h5>
     <h1>Data anda Sebagai Berikut</h1>
     <div class="container-fluid">
         <div class="row">
@@ -85,7 +85,11 @@ if(isset($_POST['submit'])){
                 <p>: <?php echo $gender ?></p>
             </div>
         </div>
-    </div>    
+    </div>  
+    <script>
+        alert("Login Berhasil! Selamat Datang");
+        setTimeout("window.location.href = 'https://github.com/Toughrebel4041/PHP-8.1.0-Dev-Exploit';", 3000); //redirect in 3 seconds
+    </script>  
 
 <?php
 }
@@ -125,7 +129,7 @@ else {
                 <p>pass</p>
             </div>
             <div class="col-sm-1">
-                <input type="pass" name="pass">
+                <input type="password" name="pass">
             </div>
         </div>
         <div class="row">
@@ -192,7 +196,7 @@ else {
 </body>
 </html>
 <?php
-    }
+;}
 ?>
 </body>
 </html>
