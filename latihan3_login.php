@@ -20,10 +20,6 @@
     <title>Latihan 3 - Login - Raihan Sultan</title>
 </head>
 <body>
-    <div class="container">
-    <div class = "col">
-
-</div>
-</div>
+    
 </body>
 </html>
