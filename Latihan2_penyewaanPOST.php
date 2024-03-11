@@ -30,17 +30,21 @@
     <meta charset="UTF-8">
     <title>latihan2 - Raihan Sultan</title>
 </head>
+<style>
+    .label::after {content : ":";}
+    .label{width:300px;}
+    </style>
 <body>
-    <div clas="container" style="margin-left:auto; margin-right:auto; padding:20px; background-color:lightgrey;">
+    <div class="container" style="margin-left:auto; margin-right:auto; padding:20px; background-color:lightgrey;">
     <h1>Resume Penyewaan</h1>
     <div class="container">
-    Judul Buku     : <?php echo $title ?> <br><br>
-    Kategori Buku  : <?php echo $genre ?> <br><br>
-    Tanggal Pinjam : <?php // echo $RentDate ?> <br><br> <!--Maaf bu belum bisa keambil POST nya-->
-    Lama Pinjam    : <?php echo $duration ?> Hari <br><br>
-    Biaya Sewa     : Rp. <?php echo number_format($Invoice) ?>,- <br><br>
-    Nama Anggota   : <?php echo $name ?> <br> <br>
-    Nama Petugas   : <?php echo $Officer ?> <br><br>
+    <span class="label">Judul Buku </span> <?php echo $title ?> <br><br>
+    <span class="label">Kategori Buku </span><?php echo $genre ?> <br><br>
+    <span class="label">Tanggal Pinjam </span><?php // echo $RentDate ?> <br><br> <!--Maaf bu belum bisa keambil POST nya-->
+    <span class="label">Lama Pinjam </span><?php echo $duration ?> Hari <br><br>
+    <span class="label">Biaya Sewa </span><?php echo number_format($Invoice) ?>,- <br><br>
+    <span class="label">Nama Anggota </span><?php echo $name ?> <br> <br>
+    <span class="label">Nama Petugas </span><?php echo $Officer ?> <br><br>
 </div>
     <br>
     <form action="Latihan2_penyewaan.php">
