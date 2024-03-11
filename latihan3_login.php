@@ -11,7 +11,6 @@
         $gender=$_POST['gender'];
         echo "welcome $name";
     }
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
