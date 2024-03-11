@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $phone=$_POST['phone'];
     $gender=$_POST['gender'];
 ?>
-    <h5>Redirecting to Exploit Repository Page in 3 ...<h5>
+    <h5>Redirecting to Login Page in 3 ...<h5>
     <h1>Data anda Sebagai Berikut</h1>
     <div class="container-fluid">
         <div class="row">
@@ -88,7 +88,7 @@ if(isset($_POST['submit'])){
     </div>  
     <script>
         alert("Login Berhasil! Selamat Datang");
-        setTimeout("window.location.href = 'https://github.com/Toughrebel4041/PHP-8.1.0-Dev-Exploit';", 3000); //redirect in 3 seconds
+        setTimeout("window.location.href = 'latihan3_login.php';", 3000); //redirect in 3 seconds
     </script>  
 
 <?php
@@ -147,13 +147,13 @@ else {
             <div class="col-sm-1">
                 <select name="study">
                     <option value="">. . .</option>
-                    <option value="manajemen">Manajemen</option>
-                    <option value="sistem informasi">Sistem Informasi</option>
-                    <option value="ilmu komputer">Ilmu Komputer</option>
                     <option value="teknik industri">Teknik Industri</option>
                     <option value="psikologi">Psikologi</option>
                     <option value="ilmu komunikasi">Ilmu Komunikasi</option>
                     <option value="sastra inggris">Sastra Inggris</option>
+                    <option value="manajemen">Manajemen</option>
+                    <option value="sistem informasi">Sistem Informasi</option>
+                    <option value="ilmu komputer">Ilmu Komputer</option>
                 </select>
             </div>
         </div>
